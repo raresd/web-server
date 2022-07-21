@@ -1,5 +1,5 @@
 FROM registry.access.redhat.com/ubi9/nginx-120
 
-ADD nginx-default-cfg.conf "${NGINX_DEFAULT_CONF_PATH}"
+ADD default.conf /etc/nginx/conf.d/ 
 
 CMD nginx -g "daemon off;"
